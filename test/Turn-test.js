@@ -9,4 +9,9 @@ describe('Turn', function() {
     const turn = new Turn();
     expect(Turn).to.be.a('function');
   });
+
+  it.skip('should be an instance of Turn', function() {
+    const turn = new Turn();
+    expect(Turn).to.be.an.instanceof(Turn);
+  })
 });
