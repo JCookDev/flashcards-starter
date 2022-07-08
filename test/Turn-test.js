@@ -22,19 +22,19 @@ describe('Turn', function() {
   });
 
   it('should return a guess', function() {
-    expect(turn.returnGuess()).to.equal('array')
+    expect(turn.returnGuess()).to.equal('array');
   });
 
   it('should return an object', function() {
-    expect(turn.returnCard()).to.equal(card)
+    expect(turn.returnCard()).to.equal(card);
   });
 
   it('should evaluate guess', function() {
-    expect(turn.evaluateGuess()).to.equal(false)
+    expect(turn.evaluateGuess()).to.equal(false);
   });
 
   it('should give feedback', function() {
-    expect(turn.giveFeedback()).to.equal('Incorrect!')
+    expect(turn.giveFeedback()).to.equal('Incorrect!');
   });
 
 });
