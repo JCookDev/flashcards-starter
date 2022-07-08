@@ -17,11 +17,11 @@ describe('Turn', function() {
     expect(Turn).to.be.a('function');
   });
 
-  it.skip('should be an instance of Turn', function() {
-    expect(Turn).to.be.an.instanceof(Turn);
+  it('should be an instance of Turn', function() {
+    expect(turn).to.be.an.instanceof(Turn);
   });
 
-  it.skip('should accept a guess', function() {
+  it('should return a guess', function() {
     expect(turn.returnGuess()).to.equal('array')
   });
 
