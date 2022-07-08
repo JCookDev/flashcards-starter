@@ -13,7 +13,7 @@ describe('Turn', function() {
     turn = new Turn('array', card);
   });
 
-  it.skip('should be a function', function() {
+  it('should be a function', function() {
     expect(Turn).to.be.a('function');
   });
 
@@ -36,5 +36,5 @@ describe('Turn', function() {
   it.skip('should give feedback', function() {
     expect(turn.giveFeedback().to.equal('incorrect!'))
   });
-  
+
 });
