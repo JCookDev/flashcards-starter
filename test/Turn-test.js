@@ -29,12 +29,12 @@ describe('Turn', function() {
     expect(turn.returnCard()).to.equal(card)
   });
 
-  it.skip('should evaluate guess', function() {
+  it('should evaluate guess', function() {
     expect(turn.evaluateGuess()).to.equal(false)
   });
 
-  it.skip('should give feedback', function() {
-    expect(turn.giveFeedback().to.equal('incorrect!'))
+  it('should give feedback', function() {
+    expect(turn.giveFeedback()).to.equal('Incorrect!')
   });
 
 });
