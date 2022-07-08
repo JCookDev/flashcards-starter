@@ -25,7 +25,7 @@ describe('Turn', function() {
     expect(turn.returnGuess()).to.equal('array')
   });
 
-  it.skip('should return an object', function() {
+  it('should return an object', function() {
     expect(turn.returnCard()).to.equal(card)
   });
 
