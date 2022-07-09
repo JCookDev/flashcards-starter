@@ -36,4 +36,8 @@ describe('Round', function() {
   it('should return current card', function() {
     expect(round.currentCard).to.deep.equal(card1);
   });
+
+  it('should start at turn 0', function() {
+    expect(round.turn).to.equal(0);
+  });
 });
