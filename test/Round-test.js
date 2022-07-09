@@ -33,15 +33,22 @@ describe('Round', function() {
     expect(round.deck).to.deep.equal([card1, card2, card3]);
   });
 
-  it('should return current card', function() {
+  it.skip('should return current card', function() {
     expect(round.currentCard).to.deep.equal(card1);
   });
 
-  it('should start at turn 0', function() {
+  it.skip('should start at turn 0', function() {
     expect(round.turn).to.equal(0);
   });
 
-  it('should store a list of incorrect guesses', function() {
+  it.skip('should store a list of incorrect guesses', function() {
     expect(round.incorrectGuesses).to.deep.equal([]);
+  });
+
+  it.skip('should update turns count', function() {
+    const turn = new Turn('array', card1);
+
+    round.takeTurn(turn);
+    expect(round.turn).to.equal(1);
   });
 });
