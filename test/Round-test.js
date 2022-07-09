@@ -32,4 +32,8 @@ describe('Round', function() {
   it.skip('should be able to take a deck of cards', function() {
     expect(round.deck).to.deep.equal([card1, card2, card3]);
   });
+
+  it('should return current card', function() {
+    expect(round.currentCard).to.deep.equal(card1);
+  });
 });
