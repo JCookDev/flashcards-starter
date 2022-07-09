@@ -40,4 +40,8 @@ describe('Round', function() {
   it('should start at turn 0', function() {
     expect(round.turn).to.equal(0);
   });
+
+  it('should store a list of incorrect guesses', function() {
+    expect(round.incorrectGuesses).to.deep.equal([]);
+  });
 });
