@@ -29,4 +29,7 @@ describe('Round', function() {
     expect(round).to.be.an.instanceof(Round);
   });
 
+  it.skip('should be able to take a deck of cards', function() {
+    expect(round.deck).to.deep.equal([card1, card2, card3]);
+  });
 });
