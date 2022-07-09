@@ -51,4 +51,11 @@ describe('Round', function() {
     round.takeTurn(turn);
     expect(round.turn).to.equal(1);
   });
+
+  it.skip('should evaluate guesses & give feedback', function() {
+    const turn = new Turn('array', card1);
+    expect(turn.evaluateGuess()).to.equal(false);
+    expect(turn.giveFeedback()).to.equal('Incorrect!');
+  });
+
 });
