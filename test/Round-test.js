@@ -21,8 +21,12 @@ describe('Round', function() {
     round = new Round(deck);
   });
 
-  it('should be a function', function() {
+  it.skip('should be a function', function() {
     expect(Round).to.be.a('function');
+  });
+
+  it.skip('should be an instance of Round', function() {
+    expect(round).to.be.an.instanceof(Round);
   });
 
 });
