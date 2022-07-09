@@ -14,4 +14,16 @@ describe('Deck', function() {
     card3 = new Card(3, 'What type of prototype method directly modifies the existing array?', ["mutator method", "accessor method", "iteration method"], "mutator method");
     deck = new Deck([card1, card2, card3]);
   });
+
+  it('should be a function', function() {
+    expect(Deck).to.be.a('function');
+  });
+
+  it('should be an instance of Deck', function() {
+   expect(deck).to.be.an.instanceof(Deck);
+ });
+
+ it('should be able to be instanciated with cards', function() {
+   expect(deck.cards).to.deep.equal([card1, card2, card3]);
+ });
 });
