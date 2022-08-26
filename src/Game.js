@@ -22,6 +22,7 @@ class Game {
        prototypeQuestions[i].correctAnswer);
      this.cards.push(card);
    }
+   const deck = new Deck(prototypeQuestions);
   }
 
   printMessage(deck, round) {
