@@ -33,6 +33,15 @@ class Round {
 
   endRound() {
     return `** Round over! ** You answered ${this.calculatePercentageCorrect()}% of the questions correctly!`;
+    console.log(${this.calculateTime()});
+  }
+
+  calculateTime() {
+    let endTime = Date.now();
+    let totalTime = (endTime - this.startTime) / 1000;
+    let min = Math.floor(totalTime / 60);
+    let sec = Math.round(totalTime % 60);
+    return `You finished in ${min} min(s) and ${sec} sec(s)!  Nice work!`;
   }
 
 }
