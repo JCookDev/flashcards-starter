@@ -32,8 +32,10 @@ class Round {
   }
 
   endRound() {
-    return `** Round over! ** You answered ${this.calculatePercentageCorrect()}% of the questions correctly!`;
-    console.log(${this.calculateTime()});
+    console.log(`
+      -----------------------------------------------------------------------
+      ** Round over! ** You answered ${this.calculatePercentageCorrect()}% of the questions correctly!
+    ${this.calculateTime()}`);
   }
 
   calculateTime() {
