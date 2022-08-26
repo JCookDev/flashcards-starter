@@ -23,6 +23,7 @@ class Game {
      this.cards.push(card);
    }
    const deck = new Deck(prototypeQuestions);
+   const round = new Round(deck);
   }
 
   printMessage(deck, round) {
