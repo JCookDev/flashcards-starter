@@ -27,5 +27,4 @@ describe('Game', function() {
     game.start();
     expect(game.cards.length).to.equal(30);
   });
-
 });
