@@ -19,7 +19,13 @@ describe('Game', function() {
   });
 
   it('should be able to keep track of current round', function() {
-   game.start();
-   expect(game.currentRound).to.equal(1);
- });
+    game.start();
+    expect(game.currentRound).to.equal(1);
+  });
+
+  it.skip('should be able to take 30 cards', function() {
+    game.start();
+    expect(game.cards.length).to.equal(30);
+  });
+
 });
