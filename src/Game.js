@@ -14,6 +14,14 @@ class Game {
 
   start() {
     this.currentRound++;
+    for (let i = 0; i < prototypeQuestions.length; i++) {
+     let card = new Card(
+       prototypeQuestions[i].id,
+       prototypeQuestions[i].questions,
+       prototypeQuestions[i].answers,
+       prototypeQuestions[i].correctAnswer);
+     this.cards.push(card);
+   }
   }
 
   printMessage(deck, round) {

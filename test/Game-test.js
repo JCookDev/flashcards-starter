@@ -23,7 +23,7 @@ describe('Game', function() {
     expect(game.currentRound).to.equal(1);
   });
 
-  it.skip('should be able to take 30 cards', function() {
+  it('should be able to take 30 cards', function() {
     game.start();
     expect(game.cards.length).to.equal(30);
   });
